@@ -15,7 +15,7 @@ const tutors = [
     subjects: ["MATHEMATICS", "PHYSICS"],
     price: "$150/HR",
     strengths: ["Advanced Math", "Problem Solving", "Exam Prep"],
-    calendlyLink: "https://calendly.com/sarah-chen-tutoring",
+    calendlyLink: "https://calendly.com/royalestoretiga/30min",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const tutors = [
     subjects: ["CHEMISTRY", "BIOLOGY"],
     price: "$140/HR",
     strengths: ["Lab Work", "Research Methods", "Medical Prep"],
-    calendlyLink: "https://calendly.com/marcus-wright-tutoring",
+    calendlyLink: "https://calendly.com/royalestoretiga/30min",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const tutors = [
     subjects: ["LANGUAGES", "TEST PREP"],
     price: "$120/HR",
     strengths: ["Language Immersion", "SAT/ACT", "Communication"],
-    calendlyLink: "https://calendly.com/elena-rodriguez-tutoring",
+    calendlyLink: "https://calendly.com/royalestoretiga/30min",
   },
 ]
 

@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Button } from "@/components/ui/button"
 
 const subjects = [
   {
@@ -135,18 +136,6 @@ const subjects = [
         level: "Multiple Subjects",
         tutors: 3,
         description: "OBLITERATE AP exams across ALL subject areas",
-      },
-      {
-        name: "MCAT Prep",
-        level: "Medical School",
-        tutors: 1,
-        description: "VAPORIZE MCAT sections and SECURE medical school admission",
-      },
-      {
-        name: "GRE/GMAT",
-        level: "Graduate School",
-        tutors: 2,
-        description: "DEMOLISH graduate entrance exams with STRATEGIC precision",
       },
     ],
   },
@@ -299,6 +288,63 @@ export default function SubjectsPage() {
                   </div>
                 ),
             )}
+          </div>
+        </section>
+
+        {/* Free Tutoring Section */}
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-green-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8">[FREE TUTORING]</h2>
+              <p className="text-base sm:text-lg lg:text-xl font-bold">{">"} EDUCATION FOR EVERYONE - NO BARRIERS</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
+              <div className="border-2 sm:border-4 border-green-600 p-4 sm:p-6 lg:p-8 hover:bg-green-600 hover:text-white transition-colors duration-200">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black mb-3 sm:mb-4 tracking-wider text-green-600 hover:text-white">[QUALIFICATION]</h3>
+                <p className="text-base sm:text-lg leading-relaxed">
+                  {">"} FAMILIES BELOW POVERTY LINE
+                  <br />
+                  {">"} FOSTER CARE YOUTH
+                  <br />
+                  {">"} REFUGEE STUDENTS
+                  <br />
+                  {">"} FIRST-GEN COLLEGE BOUND
+                </p>
+              </div>
+              <div className="border-2 sm:border-4 border-green-600 p-4 sm:p-6 lg:p-8 hover:bg-green-600 hover:text-white transition-colors duration-200">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black mb-3 sm:mb-4 tracking-wider text-green-600 hover:text-white">[ALL SUBJECTS]</h3>
+                <p className="text-base sm:text-lg leading-relaxed">
+                  {">"} MATHEMATICS
+                  <br />
+                  {">"} SCIENCES
+                  <br />
+                  {">"} ENGLISH & LITERATURE
+                  <br />
+                  {">"} TEST PREPARATION
+                </p>
+              </div>
+              <div className="border-2 sm:border-4 border-green-600 p-4 sm:p-6 lg:p-8 hover:bg-green-600 hover:text-white transition-colors duration-200">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black mb-3 sm:mb-4 tracking-wider text-green-600 hover:text-white">[BONUS SUPPORT]</h3>
+                <p className="text-base sm:text-lg leading-relaxed">
+                  {">"} COLLEGE APPLICATIONS
+                  <br />
+                  {">"} MENTORSHIP
+                  <br />
+                  {">"} STUDY MATERIALS
+                  <br />
+                  {">"} 24/7 SUPPORT
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link href="/contact">
+                <Button className="bg-green-600 text-white hover:bg-green-700 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-bold tracking-wider border-2 sm:border-4 border-green-600 rounded-none transition-colors">
+                  [APPLY FOR FREE TUTORING]
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
 

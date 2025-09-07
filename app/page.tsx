@@ -313,6 +313,51 @@ export default function TutorOneLanding() {
           </div>
         </section>
 
+        {/* Free Tutoring for Underprivileged Kids Section */}
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-green-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8">[FREE TUTORING]</h2>
+              <p className="text-base sm:text-lg lg:text-xl font-bold">{">"} EDUCATION FOR EVERYONE - NO BARRIERS</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
+              <div className="border-2 sm:border-4 border-green-600 p-4 sm:p-6 lg:p-8 hover:bg-green-600 hover:text-white transition-colors duration-200">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black mb-3 sm:mb-4 tracking-wider text-green-600 group-hover:text-white">[WHO QUALIFIES?]</h3>
+                <p className="text-base sm:text-lg leading-relaxed">
+                  {">"} FAMILIES BELOW POVERTY LINE
+                  <br />
+                  {">"} FOSTER CARE YOUTH
+                  <br />
+                  {">"} REFUGEE & IMMIGRANT STUDENTS
+                  <br />
+                  {">"} FIRST-GENERATION COLLEGE BOUND
+                </p>
+              </div>
+              <div className="border-2 sm:border-4 border-green-600 p-4 sm:p-6 lg:p-8 hover:bg-green-600 hover:text-white transition-colors duration-200">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black mb-3 sm:mb-4 tracking-wider text-green-600 group-hover:text-white">[WHAT'S INCLUDED?]</h3>
+                <p className="text-base sm:text-lg leading-relaxed">
+                  {">"} ALL SUBJECTS COVERED
+                  <br />
+                  {">"} TEST PREP INCLUDED
+                  <br />
+                  {">"} COLLEGE APPLICATION HELP
+                  <br />
+                  {">"} MENTORSHIP & GUIDANCE
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link href="/contact">
+                <Button className="bg-green-600 text-white hover:bg-green-700 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-bold tracking-wider border-2 sm:border-4 border-green-600 rounded-none transition-colors">
+                  [APPLY FOR FREE TUTORING]
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Become a Tutor Section */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-gray-100">
           <div className="max-w-7xl mx-auto">

@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="border-t-4 border-black py-12 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
             <h3 className="text-2xl font-black mb-4 tracking-wider">[CONTACT]</h3>
             <p className="text-lg">
@@ -49,6 +49,29 @@ export function Footer() {
                 className="block text-lg hover:bg-black hover:text-white px-2 py-1 transition-colors"
               >
                 {">"} TUTOR RESOURCES
+              </Link>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-2xl font-black mb-4 tracking-wider">[FREE TUTORING]</h3>
+            <div className="space-y-2">
+              <p className="text-lg text-green-600 font-bold">
+                {">"} EDUCATION FOR ALL
+              </p>
+              <p className="text-sm">
+                QUALIFYING STUDENTS GET:
+                <br />
+                • ALL SUBJECTS FREE
+                <br />
+                • TEST PREP INCLUDED
+                <br />
+                • MENTORSHIP
+              </p>
+              <Link
+                href="/contact"
+                className="block text-lg hover:bg-green-600 hover:text-white px-2 py-1 transition-colors bg-green-600 text-white mt-2"
+              >
+                {">"} APPLY NOW
               </Link>
             </div>
           </div>
