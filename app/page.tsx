@@ -60,104 +60,21 @@ export default function TutorOneLanding() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               <div className="text-center border-2 sm:border-4 border-white p-4 sm:p-6 lg:p-8">
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">500+</div>
-                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">STUDENTS TUTORED</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">4.4</div>
+                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">AVERAGE GPA</div>
               </div>
               <div className="text-center border-2 sm:border-4 border-white p-4 sm:p-6 lg:p-8 bg-white text-black">
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">98%</div>
-                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">GRADE IMPROVEMENT</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">1520</div>
+                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">AVERAGE SAT</div>
               </div>
               <div className="text-center border-2 sm:border-4 border-white p-4 sm:p-6 lg:p-8 sm:col-span-2 lg:col-span-1">
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">24/7</div>
-                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">SUPPORT AVAILABLE</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">5</div>
+                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">AP SCORES</div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Student Reviews Section */}
-        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8">[STUDENT REVIEWS]</h2>
-              <div className="flex justify-center items-center gap-1 sm:gap-2 mb-4">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-2xl sm:text-3xl lg:text-4xl text-black">
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <span className="text-lg sm:text-xl lg:text-2xl font-black ml-2 sm:ml-4">4.9/5.0</span>
-              </div>
-              <p className="text-base sm:text-lg lg:text-xl font-bold">{">"} 500+ VERIFIED STUDENT REVIEWS</p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
-              <div className="border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 hover:bg-black hover:text-white transition-colors duration-200">
-                <div className="flex mb-3 sm:mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-lg sm:text-xl lg:text-2xl">
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <p className="text-base sm:text-lg mb-3 sm:mb-4 leading-relaxed">
-                  "DR. CHEN TRANSFORMED MY CALCULUS GRADE FROM D+ TO A-. NO MERCY, JUST PURE MATHEMATICAL DOMINATION."
-                </p>
-                <div className="font-black text-sm sm:text-base">
-                  - SARAH K., MIT STUDENT
-                  <br />
-                  <span className="text-xs sm:text-sm">GRADE: D+ → A-</span>
-                </div>
-              </div>
-
-              <div className="border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 hover:bg-black hover:text-white transition-colors duration-200">
-                <div className="flex mb-3 sm:mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-lg sm:text-xl lg:text-2xl">
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <p className="text-base sm:text-lg mb-3 sm:mb-4 leading-relaxed">
-                  "PROF. MARTINEZ CRUSHED MY SAT PREP. 1200 TO 1520. BRUTAL EFFICIENCY."
-                </p>
-                <div className="font-black text-sm sm:text-base">
-                  - JAMES L., HARVARD BOUND
-                  <br />
-                  <span className="text-xs sm:text-sm">SAT: 1200 → 1520</span>
-                </div>
-              </div>
-
-              <div className="border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 hover:bg-black hover:text-white transition-colors duration-200 md:col-span-2 xl:col-span-1">
-                <div className="flex mb-3 sm:mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-lg sm:text-xl lg:text-2xl">
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <p className="text-base sm:text-lg mb-3 sm:mb-4 leading-relaxed">
-                  "MS. JOHNSON'S CHEMISTRY SESSIONS = ACADEMIC WARFARE. FAILED TO A+ IN ONE SEMESTER."
-                </p>
-                <div className="font-black text-sm sm:text-base">
-                  - ALEX R., STANFORD STUDENT
-                  <br />
-                  <span className="text-xs sm:text-sm">GRADE: F → A+</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <Link href="/testimonials">
-                <Button className="bg-black text-white hover:bg-white hover:text-black text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-bold tracking-wider border-2 sm:border-4 border-black rounded-none transition-colors">
-                  [READ ALL REVIEWS]
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
 
         {/* Services Section */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6" id="subjects">

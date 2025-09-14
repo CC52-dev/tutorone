@@ -10,8 +10,6 @@ export function Footer() {
             <p className="text-lg">
               {">"} HELLO@TUTORONE.EDU
               <br />
-              {">"} +1 (555) TUTOR-1
-              <br />
               {">"} ONLINE & IN-PERSON
             </p>
           </div>
@@ -26,12 +24,6 @@ export function Footer() {
               </Link>
               <Link href="/book" className="block text-lg hover:bg-black hover:text-white px-2 py-1 transition-colors">
                 {">"} BOOK SESSION
-              </Link>
-              <Link
-                href="/testimonials"
-                className="block text-lg hover:bg-black hover:text-white px-2 py-1 transition-colors"
-              >
-                {">"} TESTIMONIALS
               </Link>
             </div>
           </div>

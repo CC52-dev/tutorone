@@ -8,45 +8,73 @@ import Link from "next/link"
 const tutors = [
   {
     id: 1,
-    slug: "sarah-chen", // Added slug for profile routing
-    name: "DR. SARAH CHEN",
-    subjects: ["MATHEMATICS", "PHYSICS"],
-    experience: "15 YEARS",
+    slug: "alex-srinivasan", // User as the leader
+    name: "ALEX SRINIVASAN",
+    subjects: ["MATHEMATICS", "PHYSICS", "CHEMISTRY"],
+    experience: "2 YEARS",
     rating: "5.0",
-    students: "200+",
+    students: "50+",
     description:
-      "> PHD IN THEORETICAL PHYSICS\n> MIT GRADUATE\n> SPECIALIZES IN ADVANCED CALCULUS\n> NO NONSENSE APPROACH",
-    price: "$150/HR",
-    availability: "MON-FRI 2PM-8PM",
-    calendlyLink: "https://calendly.com/sarah-chen-tutoring",
+      "> 4.35 GPA - TOP 1% OF CLASS\n> 1520 SAT SCORE\n> 5s ON AP CHEM & CALCULUS\n> 4s ON AP PHYSICS C\n> FOUNDER & LEAD TUTOR",
+    price: "$40/HR",
+    availability: "MON-FRI 4PM-9PM PST",
+    calendlyLink: "https://calendly.com/alex-srinivasan-tutoring",
   },
   {
     id: 2,
-    slug: "marcus-wright", // Added slug for profile routing
-    name: "PROF. MARCUS WRIGHT",
-    subjects: ["CHEMISTRY", "BIOLOGY"],
-    experience: "12 YEARS",
+    slug: "marcus-chen", // 4.4 GPA #1
+    name: "MARCUS CHEN",
+    subjects: ["MATHEMATICS", "BIOLOGY", "TEST PREP"],
+    experience: "1.5 YEARS",
     rating: "4.9",
-    students: "180+",
+    students: "35+",
     description:
-      "> HARVARD MEDICAL SCHOOL\n> FORMER RESEARCH SCIENTIST\n> ORGANIC CHEMISTRY EXPERT\n> RESULTS-DRIVEN METHODOLOGY",
-    price: "$140/HR",
-    availability: "TUE-SAT 10AM-6PM",
-    calendlyLink: "https://calendly.com/marcus-wright-tutoring",
+      "> 4.4 GPA - VALEDICTORIAN\n> 1520 SAT SCORE\n> 5s ON AP CALCULUS & BIO\n> 4s ON AP PHYSICS C & CHEM\n> SPECIALIZES IN TEST PREP",
+    price: "$35/HR",
+    availability: "TUE-SAT 3PM-8PM PST",
+    calendlyLink: "https://calendly.com/marcus-chen-tutoring",
   },
   {
     id: 3,
-    slug: "elena-rodriguez", // Added slug for profile routing
-    name: "MS. ELENA RODRIGUEZ",
-    subjects: ["LANGUAGES", "TEST PREP"],
-    experience: "10 YEARS",
-    rating: "5.0",
-    students: "150+",
+    slug: "david-kim", // 4.25 GPA
+    name: "DAVID KIM",
+    subjects: ["CHEMISTRY", "PHYSICS", "MATHEMATICS"],
+    experience: "1 YEAR",
+    rating: "4.8",
+    students: "25+",
     description:
-      "> TRILINGUAL SPECIALIST\n> SAT SCORE IMPROVEMENT EXPERT\n> COLUMBIA LINGUISTICS DEGREE\n> INTENSIVE IMMERSION METHODS",
-    price: "$120/HR",
-    availability: "MON-THU 3PM-9PM",
-    calendlyLink: "https://calendly.com/elena-rodriguez-tutoring",
+      "> 4.25 GPA - HONOR ROLL\n> 1480 SAT SCORE\n> 4s ON AP CHEM & PHYSICS\n> STRONG IN STEM SUBJECTS\n> PATIENT TEACHING STYLE",
+    price: "$30/HR",
+    availability: "MON-THU 4PM-7PM PST",
+    calendlyLink: "https://calendly.com/david-kim-tutoring",
+  },
+  {
+    id: 4,
+    slug: "james-patel", // 3.9 GPA
+    name: "JAMES PATEL",
+    subjects: ["MATHEMATICS", "ENGLISH", "TEST PREP"],
+    experience: "1 YEAR",
+    rating: "4.7",
+    students: "20+",
+    description:
+      "> 3.9 GPA - HONOR STUDENT\n> 1450 SAT SCORE\n> STRONG IN ALGEBRA & WRITING\n> GREAT WITH STRUGGLING STUDENTS\n> ENCOURAGING APPROACH",
+    price: "$25/HR",
+    availability: "WED-SUN 2PM-6PM PST",
+    calendlyLink: "https://calendly.com/james-patel-tutoring",
+  },
+  {
+    id: 5,
+    slug: "ryan-zhang", // 4.4 GPA #2
+    name: "RYAN ZHANG",
+    subjects: ["PHYSICS", "MATHEMATICS", "COMPUTER SCIENCE"],
+    experience: "1 YEAR",
+    rating: "4.9",
+    students: "30+",
+    description:
+      "> 4.4 GPA - TOP 2% OF CLASS\n> 1500 SAT SCORE\n> 5s ON AP CALCULUS & PHYSICS\n> STRONG IN ADVANCED MATH\n> CLEAR EXPLANATIONS",
+    price: "$35/HR",
+    availability: "TUE-FRI 5PM-9PM PST",
+    calendlyLink: "https://calendly.com/ryan-zhang-tutoring",
   },
 ]
 
