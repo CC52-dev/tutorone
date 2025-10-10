@@ -13,7 +13,6 @@ const tutors = [
     subjects: ["MATHEMATICS", "PHYSICS", "COMPUTER SCIENCE", "WEB DESIGN", "SAT PREP"],
     experience: "FOUNDER & MANAGER",
     rating: "5.0",
-    students: "100+",
     description:
       "> 4.35 GPA\n> 1520 SAT SCORE\n> TUTOR FOR PROJECT UDAAN\n> FOUNDER & MANAGER\n> ELITE ACADEMIC MENTOR",
     price: "$25/HR",
@@ -27,7 +26,6 @@ const tutors = [
     subjects: ["MATHEMATICS", "ENGLISH", "PHYSICS", "CHEMISTRY", "SAT PREP"],
     experience: "LEAD TUTOR",
     rating: "5.0",
-    students: "80+",
     description:
       "> 4.4 GPA\n> 1520 SAT SCORE\n> 2 YEARS EXPERIENCE\n> LEAD TUTOR\n> PROVEN TRACK RECORD",
     price: "$25/HR",
@@ -41,7 +39,6 @@ const tutors = [
     subjects: ["MATHEMATICS", "ENGLISH", "CHEMISTRY", "BIOLOGY"],
     experience: "1 YEAR",
     rating: "4.9",
-    students: "40+",
     description:
       "> 3.98 GPA\n> 1 YEAR EXPERIENCE\n> STRONG IN SCIENCES\n> PATIENT & DETAILED\n> GREAT WITH STUDENTS",
     price: "$20/HR",
@@ -55,7 +52,6 @@ const tutors = [
     subjects: ["MATHEMATICS", "ENGLISH", "SAT PREP"],
     experience: "2 YEARS",
     rating: "5.0",
-    students: "75+",
     description:
       "> 4.48 GPA\n> 1580 SAT SCORE\n> COMMITTED TO NYU\n> 2 YEARS EXPERIENCE\n> TEST PREP SPECIALIST",
     price: "$25/HR",
@@ -69,7 +65,6 @@ const tutors = [
     subjects: ["MATHEMATICS", "ENGLISH", "SAT PREP", "BIOLOGY"],
     experience: "2 YEARS",
     rating: "4.9",
-    students: "70+",
     description:
       "> 4.25 GPA\n> 1400 SAT SCORE\n> 2 YEARS EXPERIENCE\n> DEDICATED EDUCATOR\n> COMPREHENSIVE APPROACH",
     price: "$25/HR",
@@ -111,7 +106,6 @@ export default function TutorsPage() {
                     <h2 className="text-lg sm:text-xl lg:text-2xl font-black tracking-wider">{tutor.name}</h2>
                     <div className="text-right">
                       <div className="text-base sm:text-lg font-bold">{tutor.rating}★</div>
-                      <div className="text-xs sm:text-sm">{tutor.students}</div>
                     </div>
                   </div>
 

@@ -142,9 +142,11 @@ const subjects = [
 ]
 
 const tutors = [
-  { id: 1, name: "DR. SARAH CHEN", slug: "sarah-chen" },
-  { id: 2, name: "PROF. MARCUS WRIGHT", slug: "marcus-wright" },
-  { id: 3, name: "MS. ELENA RODRIGUEZ", slug: "elena-rodriguez" },
+  { id: 1, name: "SHIVEN SHARMA", slug: "shiven-sharma" },
+  { id: 2, name: "TATTVA HARISH", slug: "tattva-harish" },
+  { id: 3, name: "NITIN RAMESH", slug: "nitin-ramesh" },
+  { id: 4, name: "RYAN ZHAO", slug: "ryan-zhao" },
+  { id: 5, name: "JOEL JACOBS", slug: "joel-jacobs" },
 ]
 
 export default function SubjectsPage() {
