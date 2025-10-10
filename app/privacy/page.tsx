@@ -100,7 +100,7 @@ export default function PrivacyPage() {
               <h2 className="text-3xl font-black mb-6">[CONTACT FOR PRIVACY]</h2>
               <div className="text-lg leading-relaxed">
                 <p className="mb-4">
-                  {">"} <strong>EMAIL:</strong> PRIVACY@TUTORONE.EDU
+                  {">"} <strong>EMAIL:</strong> PRIVACY@TUTOROPIA.COM
                 </p>
                 <p className="mb-4">
                   {">"} <strong>RESPONSE TIME:</strong> 48 HOURS MAXIMUM

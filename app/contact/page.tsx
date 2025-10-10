@@ -86,7 +86,7 @@ export default function ContactPage() {
                   <br />
                   {">"} DETAILED INQUIRIES WELCOME
                 </p>
-                <div className="text-base sm:text-lg lg:text-xl font-bold">HELLO@TUTORONE.EDU</div>
+                <div className="text-base sm:text-lg lg:text-xl font-bold">HELLO@TUTOROPIA.COM</div>
               </div>
 
               <div className="border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 text-center hover:bg-black hover:text-white transition-colors duration-200">
@@ -178,11 +178,11 @@ export default function ContactPage() {
                       className="w-full border-2 sm:border-4 border-black rounded-none font-mono text-sm sm:text-base py-3 sm:py-4 px-4 bg-white"
                     >
                       <option value="">No preference</option>
-                      <option value="alex-srinivasan">Alex Srinivasan (Math & Sciences)</option>
-                      <option value="marcus-chen">Marcus Chen (Math & Test Prep)</option>
-                      <option value="david-kim">David Kim (Chemistry & Physics)</option>
-                      <option value="james-patel">James Patel (Math & English)</option>
-                      <option value="ryan-zhang">Ryan Zhang (Physics & Math)</option>
+                      <option value="shiven-sharma">Shiven Sharma (Founder & Manager)</option>
+                      <option value="tattva-harish">Tattva Harish (Lead Tutor)</option>
+                      <option value="nitin-ramesh">Nitin Ramesh (Sciences & Math)</option>
+                      <option value="ryan-zhao">Ryan Zhao (SAT Prep Expert)</option>
+                      <option value="joel-jacobs">Joel Jacobs (Multi-Subject)</option>
                     </select>
                   </div>
                 </div>

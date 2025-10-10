@@ -48,7 +48,7 @@ export default function LoginPage() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="TUTOR.EMAIL@TUTORONE.COM"
+                    placeholder="TUTOR.EMAIL@TUTOROPIA.COM"
                     className="border-2 sm:border-4 border-black rounded-none text-sm sm:text-base p-3 sm:p-4 font-mono"
                     required
                   />

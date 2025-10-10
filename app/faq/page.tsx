@@ -34,7 +34,7 @@ const faqData = [
     answer: "Yes, we offer group sessions for 2-4 students at reduced rates. Group sessions are perfect for study groups, siblings, or friends taking the same course. Contact us to arrange group bookings."
   },
   {
-    question: "WHAT MAKES TUTORONE DIFFERENT?",
+    question: "WHAT MAKES TUTOROPIA DIFFERENT?",
     answer: "We only work with elite tutors who have proven track records of student success. Our tutors are not just knowledgeable—they're results-driven educators who push students to achieve their maximum potential. No shortcuts, just excellence."
   },
   {

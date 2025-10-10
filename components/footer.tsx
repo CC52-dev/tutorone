@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <h3 className="text-2xl font-black mb-4 tracking-wider">[CONTACT]</h3>
             <p className="text-lg">
-              {">"} HELLO@TUTORONE.EDU
+              {">"} HELLO@TUTOROPIA.COM
               <br />
               {">"} ONLINE & IN-PERSON
             </p>
@@ -89,7 +89,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t-4 border-black mt-12 pt-8 text-center">
-          <p className="text-lg font-bold">© 2025 TUTORONE - ALL RIGHTS ACADEMICALLY RESERVED</p>
+          <p className="text-lg font-bold">© 2025 TUTOROPIA - ALL RIGHTS ACADEMICALLY RESERVED</p>
         </div>
       </div>
     </footer>

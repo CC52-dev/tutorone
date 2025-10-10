@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "TutorOne - Elite Academic Tutoring",
+  title: "Tutoropia - Elite Academic Tutoring",
   description:
     "Professional tutoring services for serious students. Master mathematics, sciences, languages, and test prep with our expert tutors.",
   generator: "v0.app",

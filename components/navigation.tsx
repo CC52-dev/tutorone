@@ -25,7 +25,7 @@ export function Navigation() {
           href="/"
           className="text-xl sm:text-2xl font-bold tracking-wider hover:bg-black hover:text-white px-2 py-1 transition-colors"
         >
-          [TUTORONE]
+          [TUTOROPIA]
         </Link>
 
         {/* Desktop Navigation */}

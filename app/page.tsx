@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { SplineHero } from "@/components/spline-hero"
 import Link from "next/link"
 
-export default function TutorOneLanding() {
+export default function TutopiaLanding() {
   return (
     <div className="min-h-screen bg-white text-black font-mono flex flex-col">
       <Navigation />
@@ -60,16 +60,16 @@ export default function TutorOneLanding() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               <div className="text-center border-2 sm:border-4 border-white p-4 sm:p-6 lg:p-8">
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">4.4</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">4.3</div>
                 <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">AVERAGE GPA</div>
               </div>
               <div className="text-center border-2 sm:border-4 border-white p-4 sm:p-6 lg:p-8 bg-white text-black">
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">1520</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">1500+</div>
                 <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">AVERAGE SAT</div>
               </div>
               <div className="text-center border-2 sm:border-4 border-white p-4 sm:p-6 lg:p-8 sm:col-span-2 lg:col-span-1">
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">5</div>
-                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">AP SCORES</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">10</div>
+                <div className="text-base sm:text-lg lg:text-xl font-bold tracking-wider">APS TAKEN</div>
               </div>
             </div>
           </div>

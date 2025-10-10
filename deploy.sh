@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# TutorOne Deployment Script
-echo "🚀 Starting TutorOne deployment..."
+# Tutoropia Deployment Script
+echo "🚀 Starting Tutoropia deployment..."
 
 # Build the Docker image
 echo "📦 Building Docker image..."
-docker build --force --no-cache -t tutorone:latest .
+docker build --force --no-cache -t tutoropia:latest .
 
 # Stop existing containers
 echo "🛑 Stopping existing containers..."

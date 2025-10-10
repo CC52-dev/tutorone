@@ -148,7 +148,7 @@ export default function BecomeTutorPage() {
                 [APPLICATION SUBMITTED]
               </h1>
               <p className="text-lg sm:text-xl font-bold mb-8 text-green-700">
-                {">"} THANK YOU FOR YOUR INTEREST IN JOINING TUTORONE
+                {">"} THANK YOU FOR YOUR INTEREST IN JOINING TUTOROPIA
               </p>
               <div className="space-y-4 text-base sm:text-lg">
                 <p className="font-bold">WHAT HAPPENS NEXT?</p>
@@ -412,7 +412,7 @@ export default function BecomeTutorPage() {
 
             <div className="mt-8 sm:mt-12 text-center">
               <div className="border-2 sm:border-4 border-black p-4 sm:p-6 bg-black text-white">
-                <h3 className="text-lg sm:text-xl font-black mb-3 sm:mb-4">WHY JOIN TUTORONE?</h3>
+                <h3 className="text-lg sm:text-xl font-black mb-3 sm:mb-4">WHY JOIN TUTOROPIA?</h3>
                 <div className="text-sm sm:text-base space-y-1 sm:space-y-2">
                   <div>{">"} COMPETITIVE HOURLY RATES ($25-75/HR)</div>
                   <div>{">"} FLEXIBLE REMOTE WORK</div>

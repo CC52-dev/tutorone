@@ -25,10 +25,10 @@ export default function StudentAgreementPage() {
         <div className="max-w-4xl mx-auto">
           <div className="space-y-12">
             <div className="border-4 border-black p-8 bg-black text-white">
-              <h2 className="text-3xl font-black mb-6">[THE TUTORONE COMMITMENT]</h2>
+              <h2 className="text-3xl font-black mb-6">[THE TUTOROPIA COMMITMENT]</h2>
               <div className="text-lg leading-relaxed space-y-4">
                 <p>
-                  BY JOINING TUTORONE, YOU AGREE TO PURSUE ACADEMIC EXCELLENCE WITH UNWAVERING DETERMINATION. THIS IS
+                  BY JOINING TUTOROPIA, YOU AGREE TO PURSUE ACADEMIC EXCELLENCE WITH UNWAVERING DETERMINATION. THIS IS
                   NOT A CASUAL TUTORING SERVICE - THIS IS AN ELITE ACADEMIC TRANSFORMATION PROGRAM.
                 </p>
               </div>
@@ -131,7 +131,7 @@ export default function StudentAgreementPage() {
               <h2 className="text-3xl font-black mb-6">[AGREEMENT SIGNATURE]</h2>
               <div className="text-lg leading-relaxed space-y-4">
                 <p>
-                  BY USING THE TUTORONE PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND
+                  BY USING THE TUTOROPIA PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND
                   BY THIS STUDENT AGREEMENT.
                 </p>
                 <p className="font-black">FAILURE IS NOT AN OPTION. EXCELLENCE IS THE ONLY ACCEPTABLE OUTCOME.</p>
