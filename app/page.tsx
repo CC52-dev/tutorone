@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { SplineHero } from "@/components/spline-hero"
+import { reviews } from "@/lib/reviews-data"
 import Link from "next/link"
 
 export default function TutopiaLanding() {
@@ -121,6 +122,57 @@ export default function TutopiaLanding() {
                   {">"} MAXIMUM SCORES GUARANTEED
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Recent Reviews Section */}
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-gray-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8">[WHAT STUDENTS SAY]</h2>
+              <p className="text-base sm:text-lg lg:text-xl font-bold">
+                {">"} {reviews.length} VERIFIED REVIEWS
+                <br />
+                {">"} AVERAGE RATING: {(reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length).toFixed(1)}/5 STARS
+              </p>
+            </div>
+
+            {/* Recent Reviews Grid - Show 6 most recent */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
+              {reviews
+                .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                .slice(0, 6)
+                .map((review) => (
+                  <div
+                    key={review.id}
+                    className="border-2 sm:border-4 border-black p-4 sm:p-6 hover:bg-black hover:text-white transition-colors duration-200"
+                  >
+                    <div className="flex justify-between items-start mb-3 sm:mb-4">
+                      <div>
+                        <h3 className="text-base sm:text-lg font-black">{review.name}</h3>
+                        <div className="text-xs sm:text-sm font-bold">
+                          {new Date(review.date).toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'short' 
+                          })}
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-sm sm:text-base">{"★".repeat(review.rating)}</div>
+                      </div>
+                    </div>
+                    <p className="text-xs sm:text-sm leading-relaxed">"{review.review}"</p>
+                  </div>
+                ))}
+            </div>
+
+            <div className="text-center">
+              <Link href="/testimonials">
+                <Button className="bg-black text-white hover:bg-white hover:text-black text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-bold tracking-wider border-2 sm:border-4 border-black rounded-none transition-colors">
+                  [VIEW ALL {reviews.length} REVIEWS]
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
