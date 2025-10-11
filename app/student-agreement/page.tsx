@@ -95,7 +95,7 @@ export default function StudentAgreementPage() {
               <h2 className="text-3xl font-black mb-6">[SUCCESS GUARANTEES]</h2>
               <div className="text-lg leading-relaxed space-y-4">
                 <p>
-                  {">"} <strong>GRADE IMPROVEMENT:</strong> MINIMUM ONE LETTER GRADE INCREASE IN 8 WEEKS
+                  {">"} <strong>GRADE IMPROVEMENT:</strong> SUCCESS GUARANTEE IN 8 WEEKS
                 </p>
                 <p>
                   {">"} <strong>UNDERSTANDING DEPTH:</strong> CONCEPTUAL MASTERY, NOT JUST MEMORIZATION

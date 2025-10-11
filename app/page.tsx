@@ -59,6 +59,7 @@ export default function TutopiaLanding() {
         {/* Stats Section */}
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-black text-white">
           <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 sm:mb-12 text-center">[TUTOR STATS]</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               <div className="text-center border-2 sm:border-4 border-white p-4 sm:p-6 lg:p-8">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-2 sm:mb-4">4.3</div>
