@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer"
 
 const tutorData = {
   "shiven-sharma": {
+    id: 1,
     name: "Shiven Sharma",
     title: "Founder & Manager - Elite Academic Mentor",
     rating: 5.0,
@@ -24,11 +25,11 @@ const tutorData = {
     ],
     availability: ["Monday 4-9 PM PST", "Tuesday 4-9 PM PST", "Wednesday 4-9 PM PST", "Thursday 4-9 PM PST", "Friday 4-9 PM PST", "Saturday 9 AM-9 PM PST", "Sunday 9 AM-9 PM PST"],
     rate: "$25/hour",
-    calendlyLink: "https://calendly.com/shiven-sharma-tutoring",
     testimonial:
       '"Shiven is an exceptional tutor! His innovative teaching methods helped me finally understand calculus. He goes above and beyond for every student!" - Michael K.',
   },
   "tattva-harish": {
+    id: 2,
     name: "Tattva Harish",
     title: "Lead Tutor - Multi-Subject Specialist",
     rating: 5.0,
@@ -46,11 +47,11 @@ const tutorData = {
     ],
     availability: ["Monday 4-9 PM PST", "Tuesday 4-9 PM PST", "Wednesday 4-9 PM PST", "Thursday 4-9 PM PST", "Friday 4-9 PM PST", "Saturday 9 AM-9 PM PST", "Sunday 9 AM-9 PM PST"],
     rate: "$25/hour",
-    calendlyLink: "https://calendly.com/tattva-harish-tutoring",
     testimonial:
       '"Tattva helped me raise my SAT score by 180 points! His multi-subject expertise is incredible. Best tutor I\'ve ever had!" - Priya S.',
   },
   "nitin-ramesh": {
+    id: 3,
     name: "Nitin Ramesh",
     title: "Tutor - Science & Mathematics Specialist",
     rating: 4.9,
@@ -68,11 +69,11 @@ const tutorData = {
     ],
     availability: ["Monday 4-9 PM PST", "Tuesday 4-9 PM PST", "Wednesday 4-9 PM PST", "Thursday 4-9 PM PST", "Friday 4-9 PM PST", "Saturday 9 AM-9 PM PST", "Sunday 9 AM-9 PM PST"],
     rate: "$20/hour",
-    calendlyLink: "https://calendly.com/nitin-ramesh-tutoring",
     testimonial:
       '"Nitin is incredibly patient and thorough! He helped me go from a C to an A in chemistry. His explanations are crystal clear!" - Jessica L.',
   },
   "ryan-zhao": {
+    id: 4,
     name: "Ryan Zhao",
     title: "Tutor - Test Prep Expert",
     rating: 5.0,
@@ -80,7 +81,6 @@ const tutorData = {
     sessions: "75+",
     subjects: ["Mathematics", "English", "SAT Prep"],
     education: "High School - 4.48 GPA, 1580 SAT, Committed to NYU",
-    rating: 5.0,
     bio: "Ryan is our exceptional test prep specialist with an outstanding 4.48 GPA and impressive 1580 SAT score. Now committed to NYU, Ryan brings 2 years of tutoring experience and proven test-taking strategies to every session. His systematic approach to SAT preparation has helped 75+ students achieve significant score improvements. Ryan's own success story inspires students to reach for their highest potential.",
     achievements: [
       "IMPRESSIVE 1580 SAT score - top 1% nationally",
@@ -91,11 +91,11 @@ const tutorData = {
     ],
     availability: ["Monday 7-9 PM PST", "Tuesday 7-9 PM PST", "Wednesday 7-9 PM PST", "Thursday 7-9 PM PST", "Friday 7-9 PM PST"],
     rate: "$25/hour",
-    calendlyLink: "https://calendly.com/ryan-zhao-tutoring",
     testimonial:
       '"Ryan helped me boost my SAT score by 250 points! His strategies work. Now I\'m confident about college applications!" - David M.',
   },
   "joel-jacobs": {
+    id: 5,
     name: "Joel Jacobs",
     title: "Tutor - Comprehensive Academic Support",
     rating: 4.9,
@@ -113,7 +113,6 @@ const tutorData = {
     ],
     availability: ["Monday 6-9 PM PST", "Tuesday 6-9 PM PST", "Wednesday 6-9 PM PST", "Thursday 6-9 PM PST", "Friday 6-9 PM PST", "Saturday 3-9 PM PST", "Sunday 3-9 PM PST"],
     rate: "$25/hour",
-    calendlyLink: "https://calendly.com/joel-jacobs-tutoring",
     testimonial:
       '"Joel is an amazing all-around tutor! He helped me improve in multiple subjects. His teaching style really works!" - Amanda R.',
   },
@@ -195,12 +194,13 @@ export default function TutorProfile({ params }: { params: { id: string } }) {
 
                 <div className="text-center">
                   <div className="text-3xl font-mono font-bold mb-2">{tutor.rate}</div>
-                  <button
-                    onClick={() => window.open(tutor.calendlyLink, '_blank')}
-                    className="w-full block border-2 border-black bg-black text-white px-6 py-4 font-mono font-bold text-lg hover:bg-white hover:text-black transition-colors"
-                  >
-                    BOOK {tutor.name.split(" ")[1].toUpperCase()} NOW
-                  </button>
+                  <Link href={`/book?tutor=${tutor.id}`}>
+                    <button
+                      className="w-full block border-2 border-black bg-black text-white px-6 py-4 font-mono font-bold text-lg hover:bg-white hover:text-black transition-colors"
+                    >
+                      BOOK {tutor.name.split(" ")[1].toUpperCase()} NOW
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -257,12 +257,13 @@ export default function TutorProfile({ params }: { params: { id: string } }) {
                       {tutor.availability.map((slot, index) => (
                         <div key={index} className="border-2 border-black p-4 flex justify-between items-center">
                           <span className="font-mono font-bold">{slot}</span>
-                          <button 
-                            onClick={() => window.open(tutor.calendlyLink, '_blank')}
-                            className="border-2 border-black px-4 py-2 font-mono font-bold hover:bg-black hover:text-white transition-colors"
-                          >
-                            BOOK SLOT
-                          </button>
+                          <Link href={`/book?tutor=${tutor.id}`}>
+                            <button 
+                              className="border-2 border-black px-4 py-2 font-mono font-bold hover:bg-black hover:text-white transition-colors"
+                            >
+                              BOOK SLOT
+                            </button>
+                          </Link>
                         </div>
                       ))}
                     </div>

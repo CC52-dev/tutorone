@@ -5,12 +5,20 @@ import { Input } from "@/components/ui/input"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { useState } from "react"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 
 export default function LoginPage() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   })
+  const [showErrorDialog, setShowErrorDialog] = useState(false)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
@@ -22,9 +30,8 @@ export default function LoginPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Form doesn't actually work - just for show
-    console.log("Login attempt:", formData)
-    alert("LOGIN SYSTEM NOT IMPLEMENTED - FOR DEMO PURPOSES ONLY")
+    // Always show password incorrect dialog
+    setShowErrorDialog(true)
   }
 
   return (
@@ -102,6 +109,27 @@ export default function LoginPage() {
       </main>
 
       <Footer />
+
+      <Dialog open={showErrorDialog} onOpenChange={setShowErrorDialog}>
+        <DialogContent className="border-4 border-black rounded-none font-mono">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-black text-red-600">
+              [ERROR: LOGIN FAILED]
+            </DialogTitle>
+            <DialogDescription className="text-lg font-bold pt-4">
+              {">"} PASSWORD INCORRECT
+              <br />
+              {">"} PLEASE TRY AGAIN OR CONTACT ADMINISTRATOR
+            </DialogDescription>
+          </DialogHeader>
+          <Button
+            onClick={() => setShowErrorDialog(false)}
+            className="w-full bg-black text-white hover:bg-gray-800 text-base px-6 py-4 font-bold tracking-wider border-2 border-black rounded-none mt-4"
+          >
+            [CLOSE]
+          </Button>
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }

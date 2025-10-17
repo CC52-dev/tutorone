@@ -17,7 +17,6 @@ const tutors = [
       "> 4.35 GPA\n> 1520 SAT SCORE\n> TUTOR FOR PROJECT UDAAN\n> FOUNDER & MANAGER\n> ELITE ACADEMIC MENTOR",
     price: "$25/HR",
     availability: "MON-FRI 4PM-9PM PST, SAT-SUN 9AM-9PM PST",
-    calendlyLink: "https://calendly.com/shiven-sharma-tutoring",
   },
   {
     id: 2,
@@ -30,7 +29,6 @@ const tutors = [
       "> 4.4 GPA\n> 1520 SAT SCORE\n> 2 YEARS EXPERIENCE\n> LEAD TUTOR\n> PROVEN TRACK RECORD",
     price: "$25/HR",
     availability: "MON-FRI 4PM-9PM PST, SAT-SUN 9AM-9PM PST",
-    calendlyLink: "https://calendly.com/tattva-harish-tutoring",
   },
   {
     id: 3,
@@ -43,7 +41,6 @@ const tutors = [
       "> 3.98 GPA\n> 1 YEAR EXPERIENCE\n> STRONG IN SCIENCES\n> PATIENT & DETAILED\n> GREAT WITH STUDENTS",
     price: "$20/HR",
     availability: "MON-FRI 4PM-9PM PST, SAT-SUN 9AM-9PM PST",
-    calendlyLink: "https://calendly.com/nitin-ramesh-tutoring",
   },
   {
     id: 4,
@@ -56,7 +53,6 @@ const tutors = [
       "> 4.48 GPA\n> 1580 SAT SCORE\n> COMMITTED TO NYU\n> 2 YEARS EXPERIENCE\n> TEST PREP SPECIALIST",
     price: "$25/HR",
     availability: "MON-FRI 7PM-9PM PST",
-    calendlyLink: "https://calendly.com/ryan-zhao-tutoring",
   },
   {
     id: 5,
@@ -69,7 +65,6 @@ const tutors = [
       "> 4.25 GPA\n> 1400 SAT SCORE\n> 2 YEARS EXPERIENCE\n> DEDICATED EDUCATOR\n> COMPREHENSIVE APPROACH",
     price: "$25/HR",
     availability: "MON-FRI 6PM-9PM PST, SAT-SUN 3PM-9PM PST",
-    calendlyLink: "https://calendly.com/joel-jacobs-tutoring",
   },
 ]
 
@@ -134,12 +129,13 @@ export default function TutorsPage() {
                   </div>
 
                   <div className="flex flex-col gap-2 sm:gap-3">
-                    <Button 
-                      onClick={() => window.open(tutor.calendlyLink, '_blank')}
-                      className="w-full bg-transparent border-2 sm:border-4 border-black group-hover:border-white text-black group-hover:text-black group-hover:bg-white hover:bg-white hover:text-black font-bold tracking-wider rounded-none transition-colors text-sm sm:text-base py-2 sm:py-3"
-                    >
-                      [BOOK {tutor.name.split(" ")[1]}]
-                    </Button>
+                    <Link href={`/book?tutor=${tutor.id}`} className="w-full">
+                      <Button 
+                        className="w-full bg-transparent border-2 sm:border-4 border-black group-hover:border-white text-black group-hover:text-black group-hover:bg-white hover:bg-white hover:text-black font-bold tracking-wider rounded-none transition-colors text-sm sm:text-base py-2 sm:py-3"
+                      >
+                        [BOOK {tutor.name.split(" ")[1]}]
+                      </Button>
+                    </Link>
                     <Link href={`/tutors/${tutor.slug}`}>
                       <Button
                         variant="outline"
