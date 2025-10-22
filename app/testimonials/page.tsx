@@ -51,17 +51,6 @@ export default function TestimonialsPage() {
         {/* Student Reviews Section */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8">[STUDENT REVIEWS]</h2>
-              <p className="text-base sm:text-lg lg:text-xl font-bold">
-                {">"} REAL FEEDBACK FROM REAL STUDENTS
-                <br />
-                {">"} {reviews.length} VERIFIED REVIEWS
-                <br />
-                {">"} AVERAGE RATING: {(reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length).toFixed(1)}/5 STARS
-              </p>
-            </div>
-
             {/* Reviews Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
               {paginatedReviews.map((review) => (
