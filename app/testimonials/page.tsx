@@ -7,13 +7,6 @@ import { useState } from "react"
 import Link from "next/link"
 import { reviews, Review } from "@/lib/reviews-data"
 
-const stats = [
-  { number: "98%", label: "GRADE IMPROVEMENT RATE" },
-  { number: "320", label: "AVERAGE SAT POINT INCREASE" },
-  { number: "1.1", label: "AVERAGE GPA BOOST" },
-  { number: "95%", label: "COLLEGE ACCEPTANCE RATE" },
-]
-
 export default function TestimonialsPage() {
   const [selectedReview, setSelectedReview] = useState<number | null>(null)
   const [reviewsPerPage] = useState<number>(12)
@@ -54,25 +47,6 @@ export default function TestimonialsPage() {
             </p>
           </div>
         </section>
-
-        {/* Stats Section */}
-        <section className="py-12 sm:py-16 px-4 sm:px-6 border-b-2 sm:border-b-4 border-black">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black mb-8 sm:mb-12 text-center">[THE NUMBERS]</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-              {stats.map((stat, index) => (
-                <div
-                  key={index}
-                  className="text-center border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 hover:bg-black hover:text-white transition-colors duration-200"
-                >
-                  <div className="text-3xl sm:text-4xl lg:text-5xl font-black mb-2 sm:mb-4">{stat.number}</div>
-                  <div className="text-sm sm:text-base lg:text-lg font-bold">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
 
         {/* Student Reviews Section */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-gray-50">
