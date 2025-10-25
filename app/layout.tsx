@@ -23,21 +23,12 @@ export const metadata: Metadata = {
     siteName: 'Tutoropia',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/opengraph-image',
-        width: 1200,
-        height: 630,
-        alt: 'Tutoropia - Elite Academic Tutoring',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Tutoropia - Elite Academic Tutoring",
     description:
       "Professional tutoring services for serious students. Master mathematics, sciences, languages, and test prep with our expert tutors.",
-    images: ['/twitter-image'],
   },
   icons: {
     icon: '/icon.svg',

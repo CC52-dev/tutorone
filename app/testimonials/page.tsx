@@ -41,7 +41,7 @@ export default function TestimonialsPage() {
             <p className="text-base sm:text-lg lg:text-xl font-bold max-w-2xl mx-auto">
               {">"} REAL STUDENTS. REAL RESULTS.
               <br />
-              {">"} NO FAKE REVIEWS. ONLY FACTS.
+              {">"} AUTHENTIC TESTIMONIALS FROM REAL LEARNERS.
               <br />
               {">"} ACADEMIC DOMINATION DOCUMENTED
             </p>
