@@ -182,7 +182,7 @@ export default function ContactPage() {
                       <option value="tattva-harish">Tattva Harish (Lead Tutor)</option>
                       <option value="nitin-ramesh">Nitin Ramesh (Sciences & Math)</option>
                       <option value="ryan-zhao">Ryan Zhao (SAT Prep Expert)</option>
-                      <option value="joel-jacobs">Joel Jacobs (Multi-Subject)</option>
+                      <option value="joel-jacobs">Joel Jacob (Multi-Subject)</option>
                     </select>
                   </div>
                 </div>

@@ -96,7 +96,7 @@ const tutorData = {
   },
   "joel-jacobs": {
     id: 5,
-    name: "Joel Jacobs",
+    name: "Joel Jacob",
     title: "Tutor - Comprehensive Academic Support",
     rating: 4.9,
     experience: "2 YEARS",
@@ -166,11 +166,7 @@ export default function TutorProfile({ params }: { params: { id: string } }) {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4 mb-6">
-                  <div className="text-center border-2 border-black p-3">
-                    <div className="text-2xl font-mono font-bold">★{tutor.rating}</div>
-                    <div className="text-sm font-mono">RATING</div>
-                  </div>
+                <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center border-2 border-black p-3">
                     <div className="text-2xl font-mono font-bold">{tutor.experience}</div>
                     <div className="text-sm font-mono">EXPERIENCE</div>

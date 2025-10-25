@@ -57,7 +57,7 @@ const tutors = [
   {
     id: 5,
     slug: "joel-jacobs",
-    name: "JOEL JACOBS",
+    name: "JOEL JACOB",
     subjects: ["MATHEMATICS", "ENGLISH", "SAT PREP", "BIOLOGY"],
     experience: "2 YEARS",
     rating: "4.9",
@@ -99,9 +99,6 @@ export default function TutorsPage() {
                 >
                   <div className="flex justify-between items-start mb-4 sm:mb-6">
                     <h2 className="text-lg sm:text-xl lg:text-2xl font-black tracking-wider">{tutor.name}</h2>
-                    <div className="text-right">
-                      <div className="text-base sm:text-lg font-bold">{tutor.rating}★</div>
-                    </div>
                   </div>
 
                   <div className="mb-4 sm:mb-6">
